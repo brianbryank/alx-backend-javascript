@@ -16,8 +16,15 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  plugins: ['jest'],
+  plugins:
+    ['jest']
+    ['react']
+    ["jsx-a11y"]
+    ["import"],
+
   rules: {
+    'indent': 'off',
+    'no-var': 0,
     'no-console': 'off',
     'no-shadow': 'off',
     "eol-last": 0,
