@@ -1,15 +1,15 @@
 class HolbertonClass {
-    constructor(size, location) {
-      this._size = size;
-      this._location = location;
-    }
-  
-    [Symbol.toPrimitive](type) {
-      if (type === 'string') {
-        return `${this._location}`;
-      }
-      return `${this._size}`;
-    }
+  constructor(size, location) {
+    this._size = size;
+    this._location = location;
   }
-  
-  export default HolbertonClass;
+
+  [Symbol.toPrimitive](type) {
+    if (type === 'string') {
+      return `${this._location}`;
+    }
+    return `${this._size}`;
+  }
+}
+
+export default HolbertonClass;
